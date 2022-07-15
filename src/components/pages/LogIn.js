@@ -1,9 +1,10 @@
-import React from 'react';
-import "./login.css"
+import React from 'react'
+import '../../App.css'
+import "./Login.css"
 
-export default function Login() {
-  return (
-    <div className="login">
+export default function LogIn() {
+    return (
+        <div className="login">
         <span className="loginTitle">Login</span>
         <form className="loginForm">
             <label>Email</label>
@@ -13,6 +14,6 @@ export default function Login() {
             <button className="loginButton">Login</button>
         </form>
         <button className="loginRegisterButton">Register</button>
-    </div>
-  )
+        </div>
+    )
 }

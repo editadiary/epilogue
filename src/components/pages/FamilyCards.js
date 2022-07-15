@@ -1,6 +1,6 @@
 import React from 'react'
-import CardItem from './CardItem'
-import './Cards.css'
+import CardItem from '../CardItem'
+import '../Cards.css'
 
 function Cards() {
   return (
@@ -11,23 +11,23 @@ function Cards() {
                 <ul className='cards__items'>
                     <CardItem
                         src="images/img-9.jpg"
-                        text="To my mom..."
+                        text="New Post"
                         label='Family'
-                        path='/family'
+                        path='/family/write'
                     />
                     <CardItem
                         src="images/img-8.jpg"
-                        text="To my best friend xx..."
-                        label='Friends'
-                        path='/friends'
+                        text="Single"
+                        label='Single'
+                        path='/family/single'
                     />
                 </ul>
                 <ul className='cards__items'>
                     <CardItem
                         src="images/img-7.jpg"
-                        text="My happiest moment..."
-                        label='Personal'
-                        path='/personal'
+                        text="Posts"
+                        label='Posts'
+                        path='/family/posts'
                     />
                     <CardItem
                         src="images/img-6.jpg"
