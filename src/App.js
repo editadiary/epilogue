@@ -1,6 +1,13 @@
 import React from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
+import Login from './Login';
+import Posts from './Posts'
+import Register from './Register';
+import Single from './Single';
+import Write from './Write';
+
+
 import Home from './components/pages/Home';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
@@ -21,6 +28,7 @@ function App() {
         <Footer/>
       </Router>
     </>
+
   );
 }
 
