@@ -5,41 +5,41 @@ import './Cards.css'
 function Cards() {
   return (
     <div className='cards'>
-        <h1>Check out these Epic Destinations!</h1>
+        <h1>Archives</h1>
         <div className='cards__container'>
             <div className='cards__wrapper'>
                 <ul className='cards__items'>
                     <CardItem
                         src="images/img-9.jpg"
-                        text="Explore the hidden waterfall deep inside the Amazon Jungle"
-                        label='Adventure'
-                        path='/services'
+                        text="To my mom..."
+                        label='Family'
+                        path='/family'
                     />
                     <CardItem
                         src="images/img-8.jpg"
-                        text="tagdgdagadg"
-                        label='dgd'
-                        path='/services'
+                        text="To my best friend xx..."
+                        label='Friends'
+                        path='/friends'
                     />
                 </ul>
                 <ul className='cards__items'>
                     <CardItem
-                        src="images/img-9.jpg"
-                        text="Explore the hidden waterfall deep inside the Amazon Jungle"
-                        label='Adventure'
-                        path='/services'
+                        src="images/img-7.jpg"
+                        text="My happiest moment..."
+                        label='Personal'
+                        path='/personal'
                     />
                     <CardItem
-                        src="images/img-8.jpg"
-                        text="tagdgdagadg"
-                        label='dgd'
-                        path='/services'
+                        src="images/img-6.jpg"
+                        text="My goal was... Did I achieved it?"
+                        label='Personal'
+                        path='/personal'
                     />
                     <CardItem
-                        src="images/img-8.jpg"
-                        text="tagdgdagadg"
-                        label='dgd'
-                        path='/services'
+                        src="images/img-5.jpg"
+                        text="My car goes to..."
+                        label='assets'
+                        path='/personal'
                     />
                 </ul>
             </div>

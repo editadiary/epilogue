@@ -7,13 +7,14 @@ import './App.css';
 // import Single from './Single';
 // import Write from './Write';
 
-
 import Home from './components/pages/Home';
-import Services from './components/pages/Services';
-import Products from './components/pages/Products';
-import SignUp from './components/pages/SignUp';
+import Family from './components/pages/Family';
+import Friends from './components/pages/Friends';
+import Personal from './components/pages/Personal';
+import LogIn from './components/pages/LogIn';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Footer from './components/Footer';
+
 function App() {
   return (
     <>
@@ -21,9 +22,10 @@ function App() {
         <Navbar />
         <Routes>
           <Route exact path='/' element={<Home/>} />
-          <Route path='/services' element={<Services/>} />
-          <Route path='/products' element={<Products/>} />
-          <Route path='/sign-up' element={<SignUp/>} />
+          <Route path='/family' element={<Family/>} />
+          <Route path='/friends' element={<Friends/>} />
+          <Route path='/personal' element={<Personal/>} />
+          <Route path='/log-in' element={<LogIn/>} />
         </Routes>
         <Footer/>
       </Router>
