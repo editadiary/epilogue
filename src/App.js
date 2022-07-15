@@ -2,10 +2,10 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import './App.css';
 // import Login from './Login';
-// import Posts from './Posts'
+import Posts from './components/Posts'
 // import Register from './Register';
-// import Single from './Single';
-// import Write from './Write';
+import Single from './components/Single';
+import Write from './components/Write';
 
 import Home from './components/pages/Home';
 import Family from './components/pages/Family';
@@ -26,6 +26,11 @@ function App() {
           <Route path='/friends' element={<Friends/>} />
           <Route path='/personal' element={<Personal/>} />
           <Route path='/log-in' element={<LogIn/>} />
+
+          <Route path='/family/write' element={<Write/>} />
+          <Route path='/family/single' element={<Single/>} />
+          <Route path='/family/posts' element={<Posts/>} />
+
         </Routes>
         <Footer/>
       </Router>
