@@ -1,18 +1,16 @@
 import React from 'react';
-import Navbar from './components/Navbar';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-// import Login from './Login';
-import Posts from './components/Posts'
-// import Register from './Register';
-import Single from './components/Single';
-import Write from './components/Write';
-
+import Navbar from './components/Navbar';
 import Home from './components/pages/Home';
 import Family from './components/pages/Family';
 import Friends from './components/pages/Friends';
 import Personal from './components/pages/Personal';
-import LogIn from './components/pages/LogIn';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Login from './components/pages/Login';
+import Posts from './components/Posts'
+// import Register from './Register';
+import Single from './components/Single';
+import Write from './components/Write';
 import Footer from './components/Footer';
 
 function App() {
@@ -25,7 +23,7 @@ function App() {
           <Route path='/family' element={<Family/>} />
           <Route path='/friends' element={<Friends/>} />
           <Route path='/personal' element={<Personal/>} />
-          <Route path='/log-in' element={<LogIn/>} />
+          <Route path='/login' element={<Login/>} />
 
           <Route path='/family/write' element={<Write/>} />
           <Route path='/family/single' element={<Single/>} />

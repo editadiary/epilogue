@@ -10,7 +10,7 @@
 .family,
 .friends,
 .personal,
-.log-in {
+.login {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -45,7 +45,7 @@
   font-size: 100px;
 }
 
-.log-in {
+.login {
   background-image: url('/images/img-8.jpg');
   background-position: center;
   background-size: cover;
