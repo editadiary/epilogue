@@ -36,9 +36,9 @@
     border-radius: 10px;
     padding: 10px;
 }
-.registerLoginButton {
+/* .registerLoginButton {
     position: absolute;
-    top: 60px;
+    top: 100px;
     right: 20px;
     background-color: lightcoral;
     cursor: pointer;
@@ -46,4 +46,4 @@
     padding: 10px;
     color: white;
     border-radius: 10px;
-}
+} */

@@ -4,13 +4,15 @@ import {Link} from 'react-router-dom';
 
 const STYLES = ['btn--primary', 'btn--outline']; //css btn classes
 const SIZES = ['btn--medium', 'btn--large'];
+const LINKS = ['/register', '/login', '/shared'];
 
 export const Button = ({
     children, 
     type, 
     onClick, 
     buttonStyle, 
-    buttonSize
+    buttonSize,
+    goto
 }) => {
     const checkButtonStyle = STYLES.includes(buttonStyle) 
     ? buttonStyle 
@@ -20,8 +22,12 @@ export const Button = ({
     ? buttonSize 
     : SIZES[0];
 
+    const checkGoto= LINKS.includes(goto)
+    ? goto
+    : LINKS[0];
+
     return (
-        <Link to='/login' className='btn-mobile'>
+        <Link to={checkGoto} className='btn-mobile'>
             <button
             className={`btn ${checkButtonStyle} ${checkButtonSize}`}
             onClick={onClick}

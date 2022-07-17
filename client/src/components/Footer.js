@@ -6,7 +6,7 @@ import './Footer.css'
 function Footer() {
   return (
     <div className='footer-container'>
-        {/* <section className='footer-subscription'>
+        <section className='footer-subscription'>
             <p className='footer-subscription-heading'>
                 Join Epilogue
             </p>
@@ -23,9 +23,9 @@ function Footer() {
                     <Button buttonStyle='btn--outline'>Subscribe</Button>
                 </form>
             </div>
-        </section> */}
+        </section>
         
-        {/* <div class='footer-links'>
+        <div class='footer-links'>
             <div className='footer-link-wrapper'>
                 <div class='footer-link-items'>
                     <h2>About Us</h2>
@@ -59,7 +59,7 @@ function Footer() {
                     <Link to='/'>Twitter</Link>
                 </div>
             </div>
-        </div> */}
+        </div>
         <section className='social-media'>
             <div className='social-media-wrap'>
                 <div className='footer-logo'>

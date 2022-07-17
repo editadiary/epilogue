@@ -37,11 +37,6 @@ function Navbar() {
           </div>
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
             <li className='nav-item'>
-              <Link to='/' className='nav-links' onClick={closeMobileMenu}>
-                Home
-              </Link>
-            </li>
-            <li className='nav-item'>
               <Link
                 to='/family'
                 className='nav-links'
@@ -52,7 +47,7 @@ function Navbar() {
             </li>
             <li className='nav-item'>
               <Link
-                to='/friends'
+                to='friends'
                 className='nav-links'
                 onClick={closeMobileMenu}
               >
@@ -68,8 +63,16 @@ function Navbar() {
                 Personal
               </Link>
             </li>
+            <li className='nav-item'>
+              <Link 
+                to='/asset' 
+                className='nav-links' 
+                onClick={closeMobileMenu}>
+                Asset
+              </Link>
+            </li>
 
-            <li>
+            {/* <li>
               <Link
                 to='/login'
                 className='nav-links-mobile'
@@ -77,9 +80,9 @@ function Navbar() {
               >
                 Log In
               </Link>
-            </li>
+            </li> */}
           </ul>
-          {button && <Button buttonStyle='btn--outline'>LOG IN</Button>}
+          {button && <Button buttonStyle='btn--outline' goto='/login'>LOG IN</Button>}
         </div>
       </nav>
     </>

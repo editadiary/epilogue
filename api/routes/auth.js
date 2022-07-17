@@ -6,12 +6,12 @@ const bcrypt = require("bcrypt"); // for password hashing
 router.post("/register", async (req, res)=>{
     try{
         const salt = await bcrypt.genSalt(10);
-        const hasedPass = await bcrypt.hash(req.body.password, salt)
+        const hashedPass = await bcrypt.hash(req.body.password, salt)
 
         const newUser = new User({
             username: req.body.username,
             email: req.body.email,
-            password: hasedPass,
+            password: hashedPass,
         })
 
         const user = await newUser.save(); // save method is coming from mongoose

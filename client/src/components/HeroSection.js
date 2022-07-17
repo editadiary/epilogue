@@ -15,7 +15,7 @@ function HeroSection() {
           buttonStyle='btn--outline'
           buttonSize='btn--large'
         >
-          SIGN UP
+          REGISTER
         </Button>
         <Button
           className='btns'
