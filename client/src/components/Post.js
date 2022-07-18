@@ -3,12 +3,13 @@ import { Link } from 'react-router-dom';
 import "./post.css"
 
 export default function Post({post}) {
+    const PF = "http://localhost:5000/images/";
     return (
         <div className="post">
             {post.photo && (
                 <img 
                     className="postImg" 
-                    src={post.photo}
+                    src={PF + post.photo}
                     alt=""/>
             )}
            
@@ -29,8 +30,7 @@ export default function Post({post}) {
                 {new Date(post.createdAt).toDateString()}
             </span>
            </div>
-           <p className="postDesc">
-            {post.desc}</p>
+           <p className="postDesc">{post.desc}</p>
         </div>
     );
 }

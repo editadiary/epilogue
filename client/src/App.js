@@ -28,13 +28,11 @@ function App() {
           <Route path='/friends' element={<Friends/>} />
           <Route path='/personal' element={<Personal/>} />
           <Route path='/asset' element={<Asset/>} />
-          {/* <Route path='/login' element={<Login/>}/> */}
           <Route path="/login" element={user ? <Home /> : <Login />}/>
           <Route path='/register' element={<Register/>} />
 
-          <Route path='/family/write' element={<Write/>} />
-          <Route path='/family/single' element={<Single/>} />
-          <Route path='/family/posts' element={<Posts/>} />
+          <Route path='/write' element={<Write/>} />
+          <Route path='/post/:postId' />
 
         </Routes>
         <Footer/>
