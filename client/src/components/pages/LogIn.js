@@ -1,14 +1,15 @@
 import React, { useContext, useRef } from 'react'
 import '../../App.css'
 import { Context } from '../../context/Context';
+import { Link } from 'react-router-dom';
 import "./Login.css"
 import axios from "axios"
 
 export default function Login() {
 
-    const userRef = useRef
+    const userRef = useRef();
     const passwordRef = useRef();
-    const {user, dispatch, isFetching} = useContext(Context)
+    const {dispatch, isFetching} = useContext(Context)
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -25,7 +26,7 @@ export default function Login() {
         }
     };
 
-    console.log(user);
+    // console.log(user);
 
     return (
         <div className="login">
@@ -45,9 +46,15 @@ export default function Login() {
                 placeholder="Enter your password..."
                 ref={passwordRef}
                 />
-            <button className="loginButton" type='submit'>Login</button>
+            <button className="loginButton" type='submit' disabled={ isFetching }>
+                Login
+            </button>
         </form>
-        <button className="loginRegisterButton">Register</button>
+        <button className="loginRegisterButton">
+            <Link className="link" to="/register">
+                Register
+            </Link>
+        </button>
         </div>
     )
 }

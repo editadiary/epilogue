@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { Button } from './Button';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import { Context } from '../context/Context';
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -23,6 +24,12 @@ function Navbar() {
   }, []);
 
   window.addEventListener('resize', showButton);
+
+  // Login
+  const {user, dispatch} = useContext(Context);
+  const handleLogout = () => {
+    dispatch({ type : "LOGOUT" })
+  };
 
   return (
     <>
@@ -71,18 +78,41 @@ function Navbar() {
                 Asset
               </Link>
             </li>
-
-            {/* <li>
-              <Link
-                to='/login'
-                className='nav-links-mobile'
-                onClick={closeMobileMenu}
-              >
-                Log In
-              </Link>
+            {/* <li className="nav-item" onClick={}>
+              {user && "LOGOUT"}
             </li> */}
-          </ul>
-          {button && <Button buttonStyle='btn--outline' goto='/login'>LOG IN</Button>}
+            
+
+            {user ? (
+              <li>
+                <Link
+                  to='/login'
+                  className='nav-links-mobile'
+                  onClick={handleLogout} 
+                >
+                  LOG OUT
+                </Link>
+              </li>
+            ) : (
+              <li>
+                <Link
+                  to='/login'
+                  className='nav-links-mobile'
+                  onClick={closeMobileMenu} 
+                >
+                  LOG IN
+                </Link>
+              </li>
+            )}            
+          </ul> 
+
+          {user && button ? (
+            <Button buttonStyle='btn--outline' goto='/' onClick={handleLogout} >LOG OUT</Button>
+          ) : (button ? (
+            <Button buttonStyle='btn--outline' goto='/login'>LOG IN</Button>
+          ) : (
+            null
+          ))}
         </div>
       </nav>
     </>

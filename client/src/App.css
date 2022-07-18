@@ -10,7 +10,7 @@
 .family,
 .friends,
 .personal,
-.login {
+.asset {
   display: flex;
   height: 90vh;
   align-items: center;
@@ -45,11 +45,20 @@
   font-size: 100px;
 }
 
-.login {
+.asset {
+  background-image: url('/images/img-4.jpg');
+  background-position: center;
+  background-size: fill;
+  background-repeat: no-repeat;
+  color: #fff;
+  font-size: 100px;
+}
+
+/* .login {
   background-image: url('/images/img-8.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
+} */
