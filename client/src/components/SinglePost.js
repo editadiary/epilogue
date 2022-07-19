@@ -6,7 +6,7 @@ import "./singlePost.css"
 
 export default function SinglePost(){
     const location = useLocation()
-    console.log(location.pathname.split("/")[2])
+    // console.log(location.pathname.split("/")[2])
     const path = location.pathname.split("/")[2]
 
     const [post, setPost] = useState({})
@@ -46,10 +46,7 @@ export default function SinglePost(){
                 )}
                 <h1 className="singlePostTitle">
                     {post.title}
-                    <div className="singlePostEdit">
-                    <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
-                    <i className="singlePostIcon fa-solid fa-trash-can" onClick={handleDelete}></i>
-                    </div>
+                    
                 </h1>
                 <div className="singlePostInfo">
                     <span className="singlePostAuthor">
@@ -60,6 +57,10 @@ export default function SinglePost(){
                     </span>
                     <span className="singlePostDate">{new Date(post.createdAt).toDateString}</span>
                 </div>
+                <div className="singlePostEdit">
+                    <i className="singlePostIcon fa-solid fa-pen-to-square"></i>
+                    <i className="singlePostIcon fa-solid fa-trash-can" onClick={handleDelete}></i>
+                    </div>
                 <p className="singlePostDesc">{post.desc}</p>
             </div>  
 

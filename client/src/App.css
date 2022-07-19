@@ -18,17 +18,17 @@
   font-size: 3rem;
 }
 
-.family {
-  background-image: url('/images/img-2.jpg');
+/* .family {
+  background-image: url('/images/img-family.avif');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   color: #fff;
   font-size: 100px;
-}
+} */
 
 .friends {
-  background-image: url('/images/img-1.jpg');
+  background-image: url('/images/img-friends.jpg');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -37,7 +37,7 @@
 }
 
 .personal {
-  background-image: url('/images/img-3.jpg');
+  background-image: url('/images/img-personal.jpg');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;
@@ -46,7 +46,7 @@
 }
 
 .asset {
-  background-image: url('/images/img-4.jpg');
+  background-image: url('/images/img-asset.webp');
   background-position: center;
   background-size: fill;
   background-repeat: no-repeat;

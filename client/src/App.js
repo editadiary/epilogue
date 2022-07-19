@@ -9,8 +9,6 @@ import Asset from './components/pages/Asset';
 import Personal from './components/pages/Personal';
 import Login from './components/pages/Login';
 import Register from './components/pages/Register'
-import Posts from './components/Posts'
-// import Register from './Register';
 import Single from './components/Single';
 import Write from './components/Write';
 import Footer from './components/Footer';
@@ -32,7 +30,8 @@ function App() {
           <Route path='/register' element={<Register/>} />
 
           <Route path='/write' element={<Write/>} />
-          <Route path='/post/:postId' />
+          <Route path='/post/:postId'  element={<Single/>} />
+
 
         </Routes>
         <Footer/>

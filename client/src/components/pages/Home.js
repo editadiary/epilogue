@@ -22,7 +22,6 @@ function Home() {
   return (
     <>
       <HeroSection />
-      <Cards />
       <Posts posts={posts}/>
     </>
   );

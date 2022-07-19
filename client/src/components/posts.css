@@ -1,6 +1,52 @@
-.posts {
+/* .posts {
     flex: 9;
     display: flex;
     flex-wrap: wrap;
     margin: 20px;
+} */
+
+.posts {
+    padding: 4rem;
+    background: #fff;
 }
+
+    h1 {
+        text-align: center;
+    }
+
+    .posts__container {
+        display: flex;
+        flex-flow: column;
+        align-items: center;
+        max-width: 1120px;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .posts__wrapper {
+        position: relative;
+        margin: 50px 0 45px;
+    }
+
+    .posts__items {
+        margin-bottom: 24px;
+    }
+
+    @media only screen and (min-width: 1200px) {
+        .content__blog__container {
+          width: 84%;
+        }
+      }
+      
+      @media only screen and (min-width: 1024px) {
+        .posts__items {
+          display:flex;
+          
+        }
+      }
+      
+      @media only screen and (max-width: 1024px) {
+        .posts__items {
+          margin-bottom: 2rem;
+        }
+      }

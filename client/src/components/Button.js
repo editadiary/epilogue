@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 const STYLES = ['btn--primary', 'btn--outline']; //css btn classes
 const SIZES = ['btn--medium', 'btn--large'];
-const LINKS = ['/register', '/login', '/shared', '/'];
+const LINKS = ['/register', '/login', '/shared', '/write', '/?cat=family','/'];
 
 export const Button = ({
     children, 
