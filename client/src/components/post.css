@@ -3,6 +3,7 @@
     flex: 1;
     margin: 0 1rem;
     border-radius: 10px;
+    margin-bottom: 24px;
 }
 
 .postItemLink {
@@ -32,7 +33,7 @@
     left: 0;
     display: block;
     width: 100%;
-    max-width: 100%;
+    min-width: 200px;
     height: 280px;
     object-fit: cover;
 

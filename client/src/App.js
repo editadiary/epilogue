@@ -9,6 +9,7 @@ import Asset from './components/pages/Asset';
 import Personal from './components/pages/Personal';
 import Login from './components/pages/Login';
 import Register from './components/pages/Register'
+import Shared from './components/pages/Shared'
 import Single from './components/Single';
 import Write from './components/Write';
 import Footer from './components/Footer';
@@ -28,10 +29,9 @@ function App() {
           <Route path='/asset' element={<Asset/>} />
           <Route path="/login" element={user ? <Home /> : <Login />}/>
           <Route path='/register' element={<Register/>} />
-
+          <Route path='/shared' element={<Shared/>} />
           <Route path='/write' element={<Write/>} />
           <Route path='/post/:postId'  element={<Single/>} />
-
 
         </Routes>
         <Footer/>

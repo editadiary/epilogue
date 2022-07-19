@@ -26,7 +26,7 @@ export default function Register() {
 
   return (
     <div className="register">
-        <span className="registerTitle">Register</span>
+        {/* <span className="registerTitle">Register</span> */}
         <form className="registerForm" onSubmit={handleSubmit}>
             <label>Username</label>
             <input 
@@ -51,7 +51,7 @@ export default function Register() {
               />
             <button className="registerButton" type='submit'>Register</button>
         </form>
-        <button className="registerLoginButton">Login</button>
+        {/* <button className="registerLoginButton">Login</button> */}
         {error && <span style={{color:"red", marginTop:"10px"}}>Something went wrong!</span>}
     </div>
   )

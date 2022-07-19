@@ -8,6 +8,7 @@
 .posts {
     padding: 4rem;
     background: #fff;
+    flex-wrap: wrap
 }
 
     h1 {
@@ -17,6 +18,7 @@
     .posts__container {
         display: flex;
         flex-flow: column;
+        flex-wrap: wrap;
         align-items: center;
         max-width: 1120px;
         width: 90%;
@@ -41,6 +43,7 @@
       @media only screen and (min-width: 1024px) {
         .posts__items {
           display:flex;
+          flex-wrap: wrap;
           
         }
       }

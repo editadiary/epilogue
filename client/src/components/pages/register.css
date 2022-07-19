@@ -1,20 +1,17 @@
 .register {
-    height: calc(100vh - 50px);
+    height: calc(100vh - 80px);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(
-        rgba(255,255,255,0.5),
-        rgba(255,255,255,0.5)
-        ), 
-        url(https://i.ytimg.com/vi/v1SabYdIlZI/mqdefault.jpg);
-    background-size: cover;
+    background:  rgba(24, 24, 29, 0.98)
 }
-.registerTitle{
+/* .registerTitle{
     font-size: 50px;
-}
+} */
 .registerForm {
+    color: whitesmoke;
+    font-size: 30px;
     margin-top: 20px;
     display: flex;
     flex-direction: column;
@@ -23,18 +20,24 @@
     margin: 10px 0;
 }
 .registerInput {
+    font-size: 30px;
     padding: 10px;
-    background-color: white;
+    background-color: gainsboro;
     border: none;
 }
 .registerButton {
-    margin-top: 20px;
+    margin-top: 50px;
     cursor: pointer;
-    background-color: teal;
-    border: none;
+    background-color: transparent;
+    border: 1px solid var(--primary);
     color: white;
-    border-radius: 10px;
+    font-size: 32px;
     padding: 10px;
+}
+.registerButton:hover {
+    background: #fff;
+    color: #242424;
+    transition: all 0.3s ease-out;
 }
 /* .registerLoginButton {
     position: absolute;

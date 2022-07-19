@@ -42,42 +42,52 @@ function Navbar() {
           <div className='menu-icon' onClick={handleClick}>
             <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
           </div>
+          
           <ul className={click ? 'nav-menu active' : 'nav-menu'}>
-            <li className='nav-item'>
-              <Link
-                to='/family'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Family
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to='friends'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Friends
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link
-                to='/personal'
-                className='nav-links'
-                onClick={closeMobileMenu}
-              >
-                Personal
-              </Link>
-            </li>
-            <li className='nav-item'>
-              <Link 
-                to='/asset' 
-                className='nav-links' 
-                onClick={closeMobileMenu}>
-                Asset
-              </Link>
-            </li>
+            {user && (
+              <li className='nav-item'>
+                <Link
+                  to='/family'
+                  className='nav-links'
+                  onClick={closeMobileMenu}
+                >
+                  Family
+                </Link>
+              </li>
+            )}
+            {user && (
+              <li className='nav-item'>
+                <Link
+                  to='friends'
+                  className='nav-links'
+                  onClick={closeMobileMenu}
+                >
+                  Friends
+                </Link>
+              </li>
+            )}
+            {user && (
+              <li className='nav-item'>
+                <Link
+                  to='/personal'
+                  className='nav-links'
+                  onClick={closeMobileMenu}
+                >
+                  Personal
+                </Link>
+              </li>
+            )}
+            {user && (
+              <li className='nav-item'>
+                <Link 
+                  to='/asset' 
+                  className='nav-links' 
+                  onClick={closeMobileMenu}>
+                  Asset
+                </Link>
+              </li>
+            )}
+            
             {/* <li className="nav-item" onClick={}>
               {user && "LOGOUT"}
             </li> */}

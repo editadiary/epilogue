@@ -1,20 +1,16 @@
-import React, { useState, useEffect, useContext } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../../App.css';
-import HeroSection from '../HeroSection';
-import Cards from '../Cards';
 import Posts from '../Posts';
 import axios from "axios"
 import { useLocation } from 'react-router-dom';
-import { Context } from '../../context/Context';
 
-function Home() {
-  const {user} = useContext(Context);
+function Shared() {
   const [posts, setPosts] = useState([]);
   const {search} = useLocation();
 
   useEffect(()=>{
     const fetchPosts = async () => {
-      const res = await axios.get("/posts"+search)
+      const res = await axios.get("/posts"+'/?cat=shared')
       console.log(res)
       setPosts(res.data)
     }
@@ -23,10 +19,10 @@ function Home() {
 
   return (
     <>
-      <HeroSection />
-      {user && <Posts posts={posts}/>}
+      <Posts posts={posts}/>
+      
     </>
   );
 }
 
-export default Home;
+export default Shared;
