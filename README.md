@@ -52,16 +52,3 @@
 
 -----------
 
-### Special thanks to
-- https://www.youtube.com/watch?v=I2UBjN5ER4s
-
-
-- https://www.youtube.com/watch?v=tlTdbc5byAs&t=0s
-
-
-- https://www.youtube.com/watch?v=OML9f6LXUUs
-
-
-- https://www.youtube.com/watch?v=LelifxOrzvw
-
-
